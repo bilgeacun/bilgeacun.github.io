@@ -53,12 +53,13 @@ address {
 /* small picture */
 .me {
     width: 225px;
-    height: 315px;
+    height: 225;
     /*border-radius: 100px;*/
     /*-webkit-border-radius: 100px;*/
     /*-moz-border-radius: 100px;*/
     margin-bottom: 10px;
 }
+
 
 header > h1 {
     color: black;
