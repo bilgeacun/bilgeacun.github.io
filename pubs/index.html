@@ -1,9 +1,69 @@
+<style>
+    /* Fonts matched to the main page (static/css/base.css, static/css/layout.css) */
+    @font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+    }
+    body {
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 21px;
+        color: rgb(48, 48, 48);
+        -webkit-font-smoothing: antialiased;
+    }
+    h1, h3 {
+        color: #181818;
+        font-family: "Georgia", "Times New Roman", serif;
+        font-weight: normal;
+    }
+    section > h1 {
+        font-size: 140%;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+    h3 { font-size: 21px; line-height: 30px; }
+    strong { font-weight: bold; color: #333; }
+    em {
+        font-style: normal;
+        font-weight: bold;
+        color: rgb(100, 100, 100);
+    }
+</style>
 <section class="twelve columns" id="publication">
     <h1>Full List of Publications</h1>
-    <p><strong>&starf; 21 conference papers &starf; 6 journal papers &starf; 1 book chapter &starf; 6 workshop papers  </strong> (Last updated: Dec, 2025)</p>
-    <h3><strong>Conference Papers</strong></h3>
+    <p><strong>&starf; <a href="#conference">24 conference papers</a> &starf; <a href="#preprints">2 preprints</a> &starf; <a href="#journal">7 journal papers</a> &starf; <a href="#book-chapter">1 book chapter</a> &starf; <a href="#workshop">6 workshop papers</a>  </strong> (Last updated: Oct, 2026)</p>
+    <h3 id="conference"><strong>Conference Papers</strong></h3>
     <article>
         <ol>
+            <li>
+		    <span style="background-color: #E1BEE7"><strong>[NeurIPS'26]</strong></span>&nbsp;
+		    <a href="https://arxiv.org/abs/2605.15871">[paper]</a>&nbsp;
+                    <a href="papers/37/this.bib">[bib]</a>
+		    <p><em>Agentic Discovery of Neural Architectures: AIRA-Compose and AIRA-Design</em></p>
+		    <span>A. Pepe, C.-Y. Lin, D. Magka, <strong>B. Acun</strong>, T. S. Foster, Y. N. Wu, A. Protopopov, C.-J. Wu, Y. Bachrach</span>
+		    </br>Conference on Neural Information Processing Systems, 2026.
+            </li>
+</br>
+            <li>
+		    <span style="background-color: #E1BEE7"><strong>[COLM'26]</strong></span>&nbsp;
+		    <a href="https://openreview.net/forum?id=82JaGVBTxV">[paper]</a>&nbsp;
+                    <a href="papers/36/this.bib">[bib]</a>
+		    <p><em>Gecko: An Efficient Neural Architecture Inherently Processing Sequences with Arbitrary Lengths</em></p>
+		    <span>X. Ma, S. Wen, L. Jin, <strong>B. Acun</strong>, R. Lai, B. Hou, W. Lin, H. Zhang, S. Yang, R. Lee, M. Wu, J. May, L. Zettlemoyer, C.-J. Wu</span>
+		    </br>Conference on Language Modeling, 2026.
+            </li>
+</br>
+            <li>
+		    <span style="background-color: #E1BEE7"><strong>[ICLR'26]</strong></span>&nbsp;
+		    <a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/c07f198309b9b81a0fdba98fb7aa90b4-Abstract-Conference.html">[paper]</a>&nbsp;
+                    <a href="papers/35/this.bib">[bib]</a>
+		    <p><em>Composer: A Search Framework for Hybrid Neural Architecture Design</em></p>
+		    <span><strong>B. Acun</strong>, P. Sinha, N. Ardalani, S. Bae, A. Golden, M. Madhyastha, C.-Y. Lin, F. Sun, N. Yadwadkar, C.-J. Wu</span>
+		    </br>International Conference on Learning Representations, 2026.
+            </li>
+</br>
             <li>
 		    <span style="background-color: #E1BEE7"><strong>[NeurIPS'25]</strong></span>&nbsp;
 		    <a href="https://openreview.net/forum?id=IjMZfMVyLF">[paper]</a>&nbsp;
@@ -202,9 +262,17 @@
             </li>
         </ol>
     </article>
-    <h3><strong>Preprints</strong></h3>
+    <h3 id="preprints"><strong>Preprints &amp; Technical Reports</strong></h3>
     <article>
         <ol>
+            <li>
+		    <span style="background-color: #E1BEE7"><strong>[arXiv'26]</strong></span>&nbsp;
+		    <a href="https://arxiv.org/abs/2606.16889">[paper]</a>&nbsp;
+                    <a href="papers/39/this.bib">[bib]</a>
+		    <p><em>Architecture Carbon Tool v3: Enabling Sustainability-aware Silicon System Design Exploration</em></p>
+		    <span>V. T. Lee, <strong>B. Acun</strong>, Z. Lewis, C.-J. Wu</span>
+            </li>
+</br>
             <li>
 		    <span style="background-color: #E1BEE7"><strong>[arXiv'23]</strong></span>&nbsp;
 		    <a href="https://arxiv.org/abs/2311.08589">[paper]</a>&nbsp;
@@ -216,9 +284,18 @@
         </ol>
     </article>
 
-    <h3><strong>Journal Papers</strong></h3>
+    <h3 id="journal"><strong>Journal Papers</strong></h3>
     <article>
         <ol>
+            <li>
+		    <span style="background-color: #E1BEE7"><strong>[TMLR'26]</strong></span>&nbsp;
+                    <a href="https://openreview.net/forum?id=x7qyXl8ecT">[paper]</a>
+                    <a href="papers/38/this.bib">[bib]</a>
+                    <p><em>Transformer–SSM Hybrid Language Models: Systematic Analysis and Design Insights</em></p>
+                    <span>S. Bae, <strong>B. Acun</strong>, C.-Y. Lin, H. Habeeb, S. Kim, L. Luo, J. Wang, C.-J. Wu</span>
+                    </br>Transactions on Machine Learning Research, 2026.
+            </li>
+</br>
             <li>
 		    <span style="background-color: #E1BEE7"><strong>[Micro'25]</strong></span>&nbsp;
                     <a href="https://ieeexplore.ieee.org/abstract/document/11120454">[paper]</a>
@@ -276,7 +353,7 @@
 
         </ol>
     </article>
-    <h3><strong>Book Chapter</strong></h3>
+    <h3 id="book-chapter"><strong>Book Chapter</strong></h3>
     <article>
         <ol>
             <li>
@@ -291,7 +368,7 @@
         </ol>
     </article>
 
-    <h3><strong>Workshop Papers</strong></h3>
+    <h3 id="workshop"><strong>Workshop Papers</strong></h3>
     <article>
         <ol>
             <li>
